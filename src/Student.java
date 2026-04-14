@@ -22,9 +22,20 @@ public class Student {
             System.out.println("Grupa " + numeGrupa + " a fot creata");
             System.out.println("Introduceti numele studentului:" );
             String nume = scanner.nextLine();
+
             System.out.println("Introduceti anul nasterii:");
             LocalDate dataNasterii= LocalDate.of(2001,5,15);
+            //Data curenta
             LocalDate dataCurenta= LocalDate.now();
+
+            // Calculam perioada dintre cele doua date
+            Period perioada = Period.between(dataNasterii,dataCurenta);
+
+            //Extragerea anilor
+            int virsta = perioada.getYears();
+
+            System.out.println("Virsta este : " + virsta +"ani.");
+
 
             System.out.println();
 
