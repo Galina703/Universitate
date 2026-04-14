@@ -18,6 +18,11 @@ public class Student {
 
             // Adaugarea obiectelor de tip student
             System.out.println("Grupa " + numeGrupa + " a fot creata");
+            System.out.println("Introduceti numele studentului:" );
+            String nume = scanner.nextLine();
+            System.out.println();
+
+
         }
 
 
