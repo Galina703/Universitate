@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import java.time.LocalDate;
+import java.time.Period;
 
 public class Student {
     public static void main(String[] args) {
@@ -20,6 +22,10 @@ public class Student {
             System.out.println("Grupa " + numeGrupa + " a fot creata");
             System.out.println("Introduceti numele studentului:" );
             String nume = scanner.nextLine();
+            System.out.println("Introduceti anul nasterii:");
+            LocalDate dataNasterii= LocalDate.of(2001,5,15);
+            LocalDate dataCurenta= LocalDate.now();
+
             System.out.println();
 
 
