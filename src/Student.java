@@ -7,11 +7,12 @@ public class Student {
         Scanner scanner = new Scanner(System.in);
         //Rularea sau oprirea programului
         System.out.println("Intrare in program..");
-        System.out.println("Introducere Facultate (Matematica/Informatica:");
+        System.out.println("Introducere Facultate (Matematica/Informatica /Algebra:");
         String facultate = scanner.nextLine();
 
         //Confirmarea si continuarea
-        System.out.println(" A fost aleasa  Facultatea " + facultate + ".");
+        System.out.println(" A fost aleasa  Facultatea: " + facultate + ".");
+
         System.out.println("Doriti sa introduceti studenti noi ? (Da/Nu ): ");
         String optiune = scanner.nextLine();
         if(optiune .equalsIgnoreCase("Da")) {
@@ -19,7 +20,7 @@ public class Student {
             String numeGrupa = scanner.nextLine();
 
             // Adaugarea obiectelor de tip student
-            System.out.println("Grupa " + numeGrupa + " a fot creata");
+            System.out.println("Grupa " + numeGrupa + " a fot creata .");
             System.out.println("Introduceti numele studentului:" );
             String nume = scanner.nextLine();
 
@@ -33,8 +34,24 @@ public class Student {
 
             //Extragerea anilor
             int virsta = perioada.getYears();
+            System.out.println("Virsta este : " + virsta + "ani.");
 
-            System.out.println("Virsta este : " + virsta +"ani.");
+            //Introducem obiectele pentru calcaularea mediei aritmetice
+            System.out.println("Introduceti nota Test1:");
+            double nota1 = scanner.nextDouble();
+
+            System.out.println("Introduceti nota Test2:");
+            double nota2 = scanner.nextDouble();
+
+            System.out.println("Introduceti nota Test3:");
+            double nota3 = scanner.nextDouble();
+
+            double suma = nota1 + nota2 + nota3;
+            double media = suma / 3;
+            System.out.println("Media este: " +media);
+
+
+
 
 
             System.out.println();
